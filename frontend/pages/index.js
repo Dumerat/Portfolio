@@ -1,13 +1,12 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Skill from '../components/Skill'
 import Header from '../components/Header'
 import styles from '@/styles/Home.module.css'
 
-
 export default function Home() {
   return (
     <>
+
       <Head>
         <title>Portfolio</title>
         <meta name="description" content="Portfolio de Dumerat" />
@@ -22,8 +21,6 @@ export default function Home() {
         <p>TEST</p>
         
       </main>
-      
-      <script src="particles.js"></script>
     </>
   )
 }
