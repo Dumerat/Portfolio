@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
 
-const changeColor = () => {
+const ChangeColor = () => {
     const [background, setBackground] = useState('transparent');
   
     useEffect(() => {
@@ -19,7 +19,6 @@ const changeColor = () => {
 
 export default function Navbar() {
 
-    const color = changeColor()
     const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
     function toggleBurger() {
@@ -28,50 +27,50 @@ export default function Navbar() {
 
     return(
         <>
-        <div className="navbar-container" style={{ backgroundColor: `rgba(${color})` }}>
-            <div  class="container">
-                <div class="top">
-                    <div class="square">
-                    <div class="square">
-                        <div class="square">
-                        <div class="square">
-                            <div class="square"><div class="square">
+        <div className="navbar-container" style={{ backgroundColor: `rgba(${ChangeColor()})` }}>
+            <div className="container">
+                <div className="top">
+                    <div className="square">
+                    <div className="square">
+                        <div className="square">
+                        <div className="square">
+                            <div className="square"><div className="square">
                             </div></div>
                         </div>
                         </div>
                     </div>
                     </div>
                 </div>
-                <div class="bottom">
-                    <div class="square">
-                    <div class="square">
-                        <div class="square">
-                        <div class="square">
-                            <div class="square"><div class="square">
+                <div className="bottom">
+                    <div className="square">
+                    <div className="square">
+                        <div className="square">
+                        <div className="square">
+                            <div className="square"><div className="square">
                             </div></div>
                         </div>
                         </div>
                     </div>
                     </div>
                 </div>
-                <div class="left">
-                    <div class="square">
-                    <div class="square">
-                        <div class="square">
-                        <div class="square">
-                            <div class="square"><div class="square">
+                <div className="left">
+                    <div className="square">
+                    <div className="square">
+                        <div className="square">
+                        <div className="square">
+                            <div className="square"><div className="square">
                             </div></div>
                         </div>
                         </div>
                     </div>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="square">
-                    <div class="square">
-                        <div class="square">
-                        <div class="square">
-                            <div class="square"><div class="square">
+                <div className="right">
+                    <div className="square">
+                    <div className="square">
+                        <div className="square">
+                        <div className="square">
+                            <div className="square"><div className="square">
                             </div></div>
                         </div>
                         </div>
@@ -90,7 +89,8 @@ export default function Navbar() {
                     width={40}
                     height={40}
                     onClick={toggleBurger}
-                    className={`${showBurgerMenu ? 'hidden' : ''}`}>
+                    className={`${showBurgerMenu ? 'hidden' : ''}`}
+                    alt='show more'>
                 </Image>
             </nav>
         </div>
@@ -99,7 +99,8 @@ export default function Navbar() {
                 src='/images/logo/cross.svg'
                 width={40}
                 height={50}
-                onClick={toggleBurger}>
+                onClick={toggleBurger}
+                alt='close'>
             </Image>
             <nav>
                 <a href='#home'>Home</a>
