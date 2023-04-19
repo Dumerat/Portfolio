@@ -4,6 +4,7 @@
    flex-direction: column;
    align-items: center;
    gap: 20px;
+   margin-top: 50px;
 }
 
 .skill-container{
@@ -30,6 +31,20 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.skill-wrapper:hover:nth-child(1){
+    background-color: gray;
+    border-radius: 25px 0px 0px 0px;
+}
+
+.skill-wrapper:hover:nth-child(2){
+    background-color: gray;
+}
+
+.skill-wrapper:hover:nth-child(3){
+    background-color: gray;
+    border-radius: 0px 0px 0px 25px;
 }
 
 .skill-image{

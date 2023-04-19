@@ -1,6 +1,8 @@
 import '@/styles/globals.css'
 import '@/styles/Header.css'
 import '@/styles/Skill.css'
+import '@/styles/Navbar.css'
+import '@/styles/About.css'
 import { Karla } from 'next/font/google'
 import { Inconsolata } from 'next/font/google'
 

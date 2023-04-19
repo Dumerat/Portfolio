@@ -39,6 +39,11 @@ const skill = [
                 "image": "/images/logo/tailwindcss-color.svg",
                 "link": "https://tailwindcss.com/"
             },
+            {
+                "name": "Bootstrap",
+                "image": "/images/logo/bootstrap-color.svg",
+                "link": "https://getbootstrap.com/"
+            },
         ]
     },
     {
@@ -83,6 +88,11 @@ const skill = [
                 "name": "Unity",
                 "image": "/images/logo/unity-color.svg",
                 "link": "https://unity.com/fr"
+            },
+            {
+                "name": "Blender",
+                "image": "/images/logo/blender-color.svg",
+                "link": "https://www.blender.org/"
             },
         ]
     }

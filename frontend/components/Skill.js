@@ -11,7 +11,7 @@ export default function Skills() {
     const SkillSelected = Skill.filter(item => item.id === activeSkill)
     
     return (
-    <div className='skill'>
+    <div id='skill' className='skill'>
         <h2>SKILLS</h2>
         <div className='skill-container'>
             <div className='skill-side-container'>
