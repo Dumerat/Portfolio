@@ -16,8 +16,10 @@ export default function Skills() {
         <div className='skill-container'>
             <div className='skill-side-container'>
                 {Skill.map((data) => {
+                    const isSelected = data.id === activeSkill;
+                    const className = isSelected ? 'skill-wrapper active-skill' : 'skill-wrapper';
                     return (
-                        <div className='skill-wrapper' key={data.id} onClick={() => setSkill(data.id)}>
+                        <div className={className} key={data.id} onClick={() => setSkill(data.id)}>
                             <div className='skill-image'>
                                 <Image
                                     src={data.logo}
