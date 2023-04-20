@@ -14,9 +14,9 @@ export default function About() {
                     </div>
                 </div> 
                 <p>
-                    Hi! My name is Yoan, I'm 22 and I develop things on my free time. <br/><br/>
-                    I like mixing science and math with programming and I'm always looking for new challenges. <br/><br/>
-                    In 2022, I entered in a OpenClassrooms Course  to learn more about web development.
+                    Hi! My name is Yoan, I&apos;m 22 and I develop things on my free time. <br/><br/>
+                    I like mixing science and math with programming and I&apos;m always looking for new challenges. <br/><br/>
+                    In 2022, I entered in a OpenClassrooms Course to learn more about web development.
                 </p>
             </div>
         </div>
