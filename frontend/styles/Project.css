@@ -5,7 +5,7 @@
     width: 100%;
     flex-direction: column;
     font-size: 1.5rem;
-    gap: 100px;
+    gap: 80px;
 }
 
 #project > div{
@@ -13,24 +13,35 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 90%;
-    row-gap: 30px;
+    row-gap: 60px;
 }
 
-.project-card-container, .project-detail{
+.project-card-container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .project-card-container{
-    position: relative;
     width: 33.33%;
+}
+
+@media screen and (max-width: 1326px) {
+    .project-card-container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 876px) {
+    .project-card-container{
+        width: 100%;
+    }
 }
 
 .project-card{
     pointer-events: all;
     position: relative;
-    max-height: 250px;
+    height: 250px;
 }
 
 .project-card::after{
@@ -43,7 +54,7 @@
 }
 
 .project-card:hover::after{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;   
 }
 
@@ -56,8 +67,43 @@
     visibility: hidden;
     position: absolute;
     z-index: 3;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.project-card:hover::after .project-detail{
+.project-detail > div > h3{
+    padding: 15px 0;
+}
+
+.project-detail > div > p{
+    padding: 10px 8px;
+}
+
+.project-card:hover .project-detail{
     visibility: visible;
+}
+
+.project-link{
+    position: relative;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.project-link > img:hover{
+    position: relative;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.project-link > img::after{
+    position: absolute;
+    content: "test";
 }
