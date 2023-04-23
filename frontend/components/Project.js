@@ -1,4 +1,4 @@
-import Projects from '@/data/Project'
+import Projects from '@/data/project'
 import Image from 'next/image'
 
 export default function Project() {
