@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import Navbar from '@/components/Navbar'
 import styles from '@/styles/Home.module.css'
 import About from '@/components/About'
+import Project from '@/components/Project'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <About/>
+        <Project/>
         <Skill/>
       </main>
     </>

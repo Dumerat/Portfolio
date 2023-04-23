@@ -1,4 +1,4 @@
-const skill = [
+[
     {
         "id": "1",
         "logo": "/images/logo/front.svg",
@@ -43,7 +43,7 @@ const skill = [
                 "name": "Bootstrap",
                 "image": "/images/logo/bootstrap-color.svg",
                 "link": "https://getbootstrap.com/"
-            },
+            }
         ]
     },
     {
@@ -75,7 +75,7 @@ const skill = [
                 "name": "Git",
                 "image": "/images/logo/git-color.svg",
                 "link": "https://git-scm.com/"
-            },
+            }
 
         ]
     },
@@ -93,9 +93,7 @@ const skill = [
                 "name": "Blender",
                 "image": "/images/logo/blender-color.svg",
                 "link": "https://www.blender.org/"
-            },
+            }
         ]
     }
 ]
-
-export default skill;
