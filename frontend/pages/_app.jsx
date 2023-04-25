@@ -4,6 +4,7 @@ import '@/styles/Skill.css'
 import '@/styles/Navbar.css'
 import '@/styles/About.css'
 import '@/styles/Project.css'
+import '@/styles/Contact.css'
 import { Karla } from 'next/font/google'
 import { Inconsolata } from 'next/font/google'
 

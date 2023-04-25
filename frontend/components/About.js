@@ -15,7 +15,8 @@ export default function About() {
                 </div> 
                 <p>
                     Hi! My name is Yoan, I&apos;m 22 and I like develop things on my free time.
-                    I like blinding math with programming and I&apos;m constantly seeking novel challenges to deepen my skills and knowledge. <br/><br/>
+                    I like blinding math with programming and I&apos;m constantly seeking novel challenges to deepen my skills and knowledge. 
+                    <br/><br/><br/>
                     In 2022, I entered in a OpenClassrooms Course to learn more about web development.
                     We started by learning Frontend and Backend dev also project management and code optimisation.
                 </p>
