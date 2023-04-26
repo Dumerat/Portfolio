@@ -1,4 +1,4 @@
-import Skill from '@/data/skill'
+import Skill from '/data/skill'
 import Image from 'next/image'
 import { useState } from 'react'
 

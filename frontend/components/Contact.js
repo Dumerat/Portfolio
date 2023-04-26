@@ -1,22 +1,27 @@
 
 export default function Contact() {
+
+    function test() {
+
+    }
+
     return(
         <section id="contact">
             <h2>Contact Me</h2>
-            <form className="form" action="#contact" method="post" name="sendmail" onsubmit="">
+            <form className="form" action="#contact" method="post" name="sendmail" onSubmit={test()}>
                 <div className="form-container">
-                    <div class="contact-info">
+                    <div className="contact-info">
                         <div>
-                            <label for='name'>Name</label>
+                            <label htmlFor='name'>Name</label>
                             <input type="text" id="name" name="name" placeholder=" Name"/>
                         </div>
                         <div>
-                            <label for='email'>Email</label>
+                            <label htmlFor='email'>Email</label>
                             <input type="text" id="email" name="email" placeholder=" Email"/>
                         </div>
                     </div>
-                    <div class="contact-message">
-                        <label for='message'>Your message</label>
+                    <div className="contact-message">
+                        <label htmlFor='message'>Your message</label>
                         <textarea id="message" name="message" placeholder=" Your message"></textarea> 
                     </div>
                 </div>

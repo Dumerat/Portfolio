@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Skill from '@/components/Skill'
-import Header from '@/components/Header'
-import Navbar from '@/components/Navbar'
-import styles from '@/styles/Home.module.css'
-import About from '@/components/About'
-import Project from '@/components/Project'
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
+import Skill from '/components/Skill'
+import Header from '/components/Header'
+import Navbar from '/components/Navbar'
+import styles from '/styles/Home.module.css'
+import About from '/components/About'
+import Project from '/components/Project'
+import Contact from '/components/Contact'
+import Footer from '/components/Footer'
 
 export default function Home() {
   return (
