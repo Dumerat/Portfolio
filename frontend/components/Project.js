@@ -19,11 +19,11 @@ export default function Project() {
                                     </div>
                                     <div className='project-link'>
                                         {data.link ? (
-                                            <img src='/images/logo/link.svg' width={30} height={30} alt='Link' onClick={() => window.open(data.link)} />
+                                            <Image src='/images/logo/link.svg' width={30} height={30} alt='Link' onClick={() => window.open(data.link)} />
                                         ) : (
-                                            <img src='/images/logo/link.svg' width={30} height={30} alt='Link' style={{ opacity: '0' }} />
+                                            <Image src='/images/logo/link.svg' width={30} height={30} alt='Link' style={{ opacity: '0' }} />
                                         )}
-                                        <img src='/images/logo/github.svg' width={30} height={30} alt='Github' onClick={() => window.open(data.git)}/>
+                                        <Image src='/images/logo/github.svg' width={30} height={30} alt='Github' onClick={() => window.open(data.git)}/>
                                     </div>
                                 </div>
                             </div>
