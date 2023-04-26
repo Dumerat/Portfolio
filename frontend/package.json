@@ -16,5 +16,9 @@
     "react-dom": "18.2.0",
     "react-particles": "^2.9.3",
     "tsparticles-slim": "^2.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "18.16.1",
+    "@types/react": "18.2.0"
   }
 }

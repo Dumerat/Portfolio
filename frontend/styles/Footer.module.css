@@ -1,7 +1,28 @@
 .footer{
-   width: 100vw;
-   height: 200px;
-   font-size: 1.5rem;
-   background-color: #151515;
-   margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    font-size: 1.5rem;
+    background-color: #151515;
+    margin-top: 80px;
+    padding: 25px 0 15px;
+}
+
+.footer > div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 120px;
+}
+
+.footer img{
+    padding: 5px;
+    border: solid 1px white;
+    border-radius: 50px;
+}
+
+.footer > h3{
+    font-size: 1.2rem;
 }
