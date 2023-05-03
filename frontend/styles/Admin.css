@@ -1,0 +1,30 @@
+.admin{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.admin-title {
+    font-size: 3rem;
+}
+
+.admin-action{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+}
+
+.admin-action section{
+    display: flex;  
+    flex-direction: column;
+    width: 50%;
+}
+
+.admin-action section > form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

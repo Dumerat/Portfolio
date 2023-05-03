@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/api/backoffice/route.js"  ],
+, "pages/api/backoffice/route.ts", "pages/adminpanel.tsx"  ],
   "exclude": [
     "node_modules"
   ]
