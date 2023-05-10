@@ -102,3 +102,82 @@
     transform: scale(1.2);
     transition: 1s;
 }
+
+.project-more-info{
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    padding: 2px 9px;
+    border: solid 2px white;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer; 
+}
+
+.project-info-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+.project-info-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 4;
+}
+
+.project-info{
+    position: fixed;
+    width: 40%;
+    height: 30%;
+    z-index: 1;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.project-info > h1{
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.project-info > div{
+    color: black;
+    font-size: 1.2rem;
+}
+
+.div-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 15px;
+}
+
+.div-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 95%;
+}
+
+.close-info{
+    color: black;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    margin: 15px 25px;
+    font-weight: bold;
+    font-size: 2rem!important;
+    cursor: pointer;
+}

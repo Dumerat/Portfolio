@@ -28,7 +28,9 @@ const Admin:NextPage = ():JSX.Element => {
           "image": "/images/project/Grim.PNG",
           "git": "https://github.com/Dumerat/Projet-7",
           "name": "Mon viieux Grimoire",
-          "desc": "Building the back-end of a book rating site"
+          "desc": "Building the back-end of a book rating site",
+          "details": "nothing",
+          "skill": "any"
         }
       }
       )
@@ -40,29 +42,50 @@ const Admin:NextPage = ():JSX.Element => {
 
   const [id, setId] = useState('')
   const [name, setName] = useState('')
-  
-  async function deleteSkill(event) {
-    event.preventDefault()
-    const response = await fetch('/api/backoffice/DeleteSkill', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ id, name })
-    });
-  
-    const result = await response.json();
-    console.log(result.message);
-  }
 
-  function createSkill(event) {
-    event.preventDefault()
-    fetch('/api/backoffice/PostSkill', {
+  var deleteSkill = function(event){
+    event.preventDefault();
+    fetch('https://eu-central-1.aws.data.mongodb-api.com/app/data-ezpcy/endpoint/data/v1/action/updateOne', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'apiKey': process.env.API_KEY,
       },
-      body: JSON.stringify({ data })
+      body: JSON.stringify({
+        dataSource: 'Portfolio',
+        database: 'Portfolio',
+        collection: 'skills',
+        query: { id: id },
+        update: { $pull: { skills: {name: name} } },
+      })
+    })
+    .then(response => response.json())
+    .then(data => console.log(data.message))
+    .catch(error => console.error(error));
+  };
+
+
+  var createSkill = function (event) {
+    event.preventDefault()
+    fetch('https://eu-central-1.aws.data.mongodb-api.com/app/data-ezpcy/endpoint/data/v1/action/insertOne', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'apiKey': process.env.API_KEY,
+      },
+      body: JSON.stringify({
+        "dataSource": "Portfolio",
+        "database": "Portfolio",
+        "collection": "Skill",
+        "document":{
+          "id": "1",
+          "image": "/images/project/Grim.PNG",
+          "git": "https://github.com/Dumerat/Projet-7",
+          "name": "Mon viieux Grimoire",
+          "desc": "Building the back-end of a book rating site"
+        }
+      }
+      )
     })
     .then(response => response.json())
     .then(data => console.log(data.message))
@@ -71,19 +94,25 @@ const Admin:NextPage = ():JSX.Element => {
 
   const [projectId, setProjectId] = useState('')
 
-  async function deleteProject(event) {
-    event.preventDefault()
-    const response = await fetch('/api/backoffice/DeleteProject', {
-      method: 'POST',
+  var deleteProject = function(event){
+    event.preventDefault();
+    fetch('https://eu-central-1.aws.data.mongodb-api.com/app/data-ezpcy/endpoint/data/v1/action/deleteOne', {
+      method: 'DELETE',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'apiKey': process.env.API_KEY,
       },
-      body: JSON.stringify({ "id" : projectId })
-    });
-  
-    const result = await response.json();
-    console.log(result.message);
-  }
+      body: JSON.stringify({
+        "dataSource": 'Portfolio',
+        "database": 'Portfolio',
+        "collection": 'Project',
+        "filter": {id: id}
+      }),
+    })
+    .then(response => response.json())
+    .then(data => console.log(data.message))
+    .catch(error => console.error(error));
+  };
 
   return(
   <>

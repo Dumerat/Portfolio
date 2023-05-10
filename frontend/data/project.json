@@ -5,14 +5,18 @@
         "link": "https://dumerat.github.io/Projet-2/",
         "git": "https://github.com/Dumerat/Projet-2",
         "name": "Booki",
-        "desc": "Creation of an home page in HTML & CSS"
+        "desc": "Creation of an home page in HTML & CSS",
+        "details": "The problem I encounter with this web project is to create a responsive design that adapts to different screen sizes and to follow a provided design model to ensure consistency across all devices.",
+        "skill": "HTML CSS"
     },
     {
         "id": "2",
         "image": "/images/project/Bluel.PNG",
         "git": "https://github.com/Dumerat/Projet-3",
         "name": "Sophie Bluel",
-        "desc": "Creating a dynamic website with JavaScript"
+        "desc": "Creating a dynamic website with JavaScript",
+        "details": "The problem I encounter with this web project is to create a dynamic website using JavaScript and fetch API to retrieve data from an external source and display it on the site in real-time.",
+        "skill": "HTML CSS JavaScript"
     },
     {
         "id": "3",
@@ -20,7 +24,9 @@
         "link": "https://projet-5-blush.vercel.app/",
         "git": "https://github.com/Dumerat/Projet-5",
         "name": "Nina Carducci",
-        "desc": "Debugging and optimizing a photographer's site"
+        "desc": "Debugging and optimizing a photographer's site",
+        "details": "The problem I encounter with this web project is to optimize and debug an existing website, as well as to implement improvements to enhance the site's SEO and increase its visibility in search engine rankings.",
+        "skill": "Lighthouse SEO"
     },
     {
         "id": "4",
@@ -28,13 +34,17 @@
         "link": "https://projet-react-app.vercel.app/",
         "git": "https://github.com/Dumerat/demo-app",
         "name": "Kasa",
-        "desc": "Creating a rental web application with react"
+        "desc": "Creating a rental web application with react",
+        "details": "The problem I encounter with this web project is to build a website using React and React Router to create a seamless and dynamic user experience with multiple pages and routes.",
+        "skill": "React JSX React-router"
     },
     {
         "id": "5",
         "image": "/images/project/Grim.PNG",
         "git": "https://github.com/Dumerat/Projet-7",
         "name": "Mon vieux Grimoire",
-        "desc": "Building the back-end of a book rating site"
+        "desc": "Building the back-end of a book rating site",
+        "details": "The problem I encounter with this web project is to create a backend server using Node.js, Express, and MongoDB to handle data storage and retrieval, as well as to provide an API for a frontend client to interact with the database.",
+        "skill": "Node.js Express MongoDB"
     }
 ]
