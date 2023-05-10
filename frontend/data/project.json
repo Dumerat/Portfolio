@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "image": "/images/project/Booki.png",
+        "image": "/images/project/Booki.PNG",
         "link": "https://dumerat.github.io/Projet-2/",
         "git": "https://github.com/Dumerat/Projet-2",
         "name": "Booki",
@@ -30,7 +30,7 @@
     },
     {
         "id": "4",
-        "image": "/images/project/Kasa.PNG",
+        "image": "/images/project/Kasa.png",
         "link": "https://projet-react-app.vercel.app/",
         "git": "https://github.com/Dumerat/demo-app",
         "name": "Kasa",
@@ -40,7 +40,7 @@
     },
     {
         "id": "5",
-        "image": "/images/project/Grim.PNG",
+        "image": "/images/project/Grim.png",
         "git": "https://github.com/Dumerat/Projet-7",
         "name": "Mon vieux Grimoire",
         "desc": "Building the back-end of a book rating site",
