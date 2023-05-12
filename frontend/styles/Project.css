@@ -30,11 +30,25 @@
     .project-card-container{
         width: 50%;
     }
+    .project-info > h1 {
+        font-size: 1.2rem;
+    }
+    .div-info{
+        font-size: 1rem;
+    }
+    .project-info{
+        width: 50%!important;
+        height: 30%!important;
+    }
 }
 
 @media screen and (max-width: 876px) {
     .project-card-container{
         width: 100%;
+    }
+    .project-info{
+        width: 75%!important;
+        height: 30%!important;
     }
 }
 
@@ -159,7 +173,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 15px;
+    margin: 0px 15px;
 }
 
 .div-info-container{
@@ -178,6 +192,6 @@
     top: 0;
     margin: 15px 25px;
     font-weight: bold;
-    font-size: 2rem!important;
+    font-size: 2rem;
     cursor: pointer;
 }
