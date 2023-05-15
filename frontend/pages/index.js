@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Yoan Portfolio</title>
+        <title>Yoan Portfolio </title>
         <meta name="description" content="Portfolio de Dumerat" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
